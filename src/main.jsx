@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { Provider } from "react-redux";
 import { store } from "./RTK/store.js";
 import { BrowserRouter } from "react-router-dom";
+import Main from "./pages/Main";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
