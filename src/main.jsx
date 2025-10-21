@@ -1,12 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { MainLayout } from "./layouts";
+import { MainLayout } from "@layouts";
 import { Provider } from "react-redux";
-import { store } from "./RTK";
+import { store } from "@RTK";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Main, Detail, Search, Favorite } from "./pages";
-import { ROUTES as ROUTE_PATHS } from "./constants";
+import { Main, Detail, Search, Favorite } from "@pages";
+import { ROUTES as ROUTE_PATHS } from "@constants";
 
 const ROUTES = [
   {

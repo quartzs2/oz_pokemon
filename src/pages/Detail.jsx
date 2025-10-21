@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { selectPokemonById } from "../RTK";
+import { selectPokemonById } from "@RTK";
 
 export default function Detail() {
   const { pokemonId } = useParams();
