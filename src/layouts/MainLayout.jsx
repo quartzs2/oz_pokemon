@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { fetchMultiplePokemonById } from "../RTK/thunk";
+import { fetchMultiplePokemonById } from "../RTK";
 import { useDispatch } from "react-redux";
-import { ROUTES } from "../constants/urls";
+import { ROUTES } from "../constants";
 
 const NAVIGATION = [
   { path: ROUTES.HOME, label: "메인" },
