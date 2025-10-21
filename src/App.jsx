@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "./App.scss";
 import { Link, Routes, Route } from "react-router-dom";
 import { fetchMultiplePokemonById } from "./RTK/thunk";
 import { useDispatch } from "react-redux";
@@ -12,7 +11,8 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMultiplePokemonById(151));
-  }, []);
+  }, [dispatch]);
+
   return (
     <>
       <h1 className="text-[40px] text-center">포켓몬 도감</h1>
