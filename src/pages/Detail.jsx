@@ -15,7 +15,7 @@ export default function Detail() {
       <div className="whitespace-pre-wrap text-center">
         {pokemon.description}
       </div>
-      <img className="w-[200px]" scr={pokemon.front} />
+      <img className="w-[200px]" src={pokemon.front} />
     </div>
   );
 }
