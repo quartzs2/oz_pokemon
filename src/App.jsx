@@ -22,7 +22,7 @@ function App() {
         <Link to={"/search"}>검색</Link>
         <Link to={"/favorite"}>찜 목록</Link>
       </nav>
-      <main className="flex justify-center">
+      <main className="flex flex-wrap gap-[20px] justify-center pt-[20px]">
         <Routes>
           <Route path={"/"} element={<Main />} />
           <Route path={"/detail/:pokemonId"} element={<Detail />} />
